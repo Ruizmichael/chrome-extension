@@ -3,10 +3,11 @@
     "name": "Dark Mode",
     "version": "1.0",
     "description": "Makes things dark",
-    "content_scripts": [{
-        "matches": ["<all_urls>"],
-        "js": ["./main.js"]
-        }],
+    "background": {
+        "'scripts": [
+            "main.js"
+        ]
+    },
     "browser_action": {
         "default_title": "Dark Mode",
         "default_popup": "optionsPopup.html",
@@ -18,5 +19,10 @@
     "icons": {
         "48": "/assets/darkmode.png",
         "128": "/assets/darkmode.png"
-    }
+    },
+    "permissions": [
+        "https://*/*",
+        "http://*/*",
+        "tabs"
+    ]
 }
