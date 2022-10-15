@@ -1,6 +1,16 @@
-/* * {
-    background-color: rgb(114, 88, 88);
-} */
+
+body {
+    width: 300px;
+    height: 100px;
+    background: rgb(99, 99, 99);
+    color:rgb(227, 227, 227);
+    font-size: 20px;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    left: 5%;
+    top: 15%;
+    border-radius: 3px;
+    position: relative;
+}
 
 .switch {
     position: relative;
@@ -10,7 +20,7 @@
 }
 
 .switch input {
-    opacity: 0;
+    opacity: 1;
     width: 0;
     height: 0;
 }
@@ -22,9 +32,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgb(138, 138, 138)
+    background-color: rgb(233, 233, 233);
     -webkit-transition: .4s;
-    transition: 4s;
+    transition: .7s;
 
 }
 
@@ -36,12 +46,12 @@
     width: 26px;
     left: 4px;
     right: 4px;
-    background-color: rgb(15, 4, 4);
+    background-color: rgb(89, 89, 89);
 }
 
 /* dark mode background when on */
 input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #303030;
 }
 
 /* input:focus + .slider {

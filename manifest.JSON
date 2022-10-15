@@ -7,7 +7,7 @@
         "matches": ["<all_urls>"],
         "js": ["./main.js"]
         }],
-    "action": {
+    "browser_action": {
         "default_title": "Dark Mode",
         "default_popup": "optionsPopup.html",
         "default_icon": {
